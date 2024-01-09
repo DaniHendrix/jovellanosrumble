@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovellanos Rumble - Página Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logoJovellanosRumble.png') }}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="imagenTitulo">
+                <img src="{{ url_for('static', filename='images/tituloIndexHeader.jpg') }}" alt="">
+            </div>
+            <div class="header-content">
+                <button id="menu-toggle" class="menu-toggle">&#9776; MENU</button>
+            </div>
+        </header>
+        <section class="descripcion">
+            <div class="descripcion-content">
+                <h2><u>Comienza La Batalla</u></h2>
+                <p>Combate a muerte contra otros alumnos por aprobar DAM en el Jovellanos <br> ¡Prepárate para la acción!</p>
+            </div>
+            <div class="contenedorBtnDescargar">
+                <div class="btnDescargar">
+                    <a href="{{ url_for('descargar_archivo') }}" download>
+                        Descargar <br> Jovellanos Rumble
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="contenedorHistoria">
+            <section class="parrafo">
+                <h2>
+                    <p><u>.:Jovellanos Rumble:.</u></p>
+                </h2>
+                <ul>
+                    <li>En un mundo donde la educación solo se basa en aprobar. <br> Cuatro de los alumnos de Desarrollo de Aplicaciones Multimedia (DAM) del instituto Melchor Gaspar de Jovellanos que han sacado un 4.9 de media en DAM son convocados a un misterioso torneo llamado <br> "Jovellanos Rumble"</li>
+                </ul>
+            </section>
+            <section class="parrafo">
+                <ul>
+                    <li>Cuatro alumnos vagos, cada uno con un promedio de 4.9, van a participar en este enfrentamiento que decidirá quién merece alcanzar la codiciada calificación académica de un 5 raspado en DAM.</li>
+                </ul>
+            </section>
+            <section class="parrafo">
+                <ul>
+                    <li>El torneo corre a cargo del espíritu del ilustre Melchor Gaspar de Jovellanos, fundador del instituto.</li>
+                </ul>
+            </section>
+            <section class="parrafo">
+                <ul>
+                    <li>Jovellanos, después de siglos de descanso en el otro barrio, ha resucitado para poner poner a prueba la destreza y habilidades de los estudiantes, creyendo que solo aquel que demuestre ser el mejor merecerá el aprobado raspado.</li>
+                </ul>
+            </section>
+            <section class="parrafo animate">
+                <ul>
+                    <li>Los cuatro participantes, cada uno con su propio avatar, son lanzados a una dimensión alternativa donde la realidad se vuelve loca, creando un paisaje surrealista lleno de desafíos y peligros. </li>
+                </ul>
+            </section>
+            <section class="parrafo animate">
+                <ul>
+                    <li>
+                        Cada estudiante lleva consigo su sable de codigo y sus zapatos antigravedad, ya que el entorno está creado para poner a prueba no solo su habilidad en el combate, sino también su destreza en el arte del parkour
+                    </li>
+                </ul>
+            </section>
+            <section class="parrafo animate">
+                <ul>
+                    <li>Mientras luchan por sus vidas y la posibilidad de obtener el aprobado, comienzan a descubrir la verdadera razón detrás del torneo.</li>
+                </ul>
+            </section>
+            <section class="parrafo animate">
+                <ul>
+                    <li>Resulta que Jovellanos, a través de este desafío, busca encontrar al heredero de su conocimiento y legado en el mundo de la tecnología. </li>
+                </ul>
+            </section>
+            <section class="parrafo animate">
+                <ul>
+                    <li>El estudiante que demuestre no solo habilidades técnicas sobresalientes, sino también ética y creatividad a la hora de acabar con sus rivales, será digno de recibir la anhelada calificación de 5 en DAM y se convertirá en el guardián de los secretos tecnológicos que Jovellanos ha acumulado a lo largo de los siglos.</li>
+                </ul>
+            </section>
+            <section class="parrafo animate">
+                <ul>
+                    <li>
+                        Con la amenaza constante de ser eliminados del torneo y expulsados de DAM los alumnos deberan dar lo maximo de si mismos para no tirar esta oportunidad milenaria y aprobar DAM por fin e irse de practicas a trabajar 8 horas y no cobrar.</li>
+                </ul>
+            </section>
+            <div class="contenedorBtnDescargar animate">
+                <div class="btnDescargar">
+                    <a href="{{ url_for('descargar_archivo') }}" download>
+                        Descargar <br> Jovellanos Rumble
+                    </a>
+                </div>
+            </div>
+        </div>
+        <section class="redesSociales">
+            <div class="red-social">
+                <a href="https://www.youtube.com/channel/UCJhbY8vO6LOMaHAtg0m4sUQ">
+                    <img src="{{ url_for('static', filename='images/YouTube.png') }}" alt="YouTube">
+                </a>
+            </div>
+            <div class="red-social">
+                <a href="https://www.facebook.com/profile.php?id=61553519888539">
+                    <img src="{{ url_for('static', filename='images/MetaFacebook.png') }}" alt="FaceBook">
+                </a>
+            </div>
+            <div class="red-social">
+                <a href="https://twitter.com/JoveRumble ">
+                    <img src="{{ url_for('static', filename='images/TwitterX.png') }}" alt="Twitter">
+                </a>
+            </div>
+            <div class="red-social">
+                <a href="https://www.instagram.com/jovellanos_rumble/">
+                    <img src="{{ url_for('static', filename='images/Instagram.png') }}" alt="Instagram">
+                </a>
+            </div>
+            <div class="red-social">
+                <a href="https://es.wikipedia.org/wiki/HTML5">
+                    <img src="{{ url_for('static', filename='images/HTML5.png') }}" alt="HTML5">
+                </a>
+            </div>
+        </section>
+        <br>
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2023 Jovellanos Rumble. Todos los derechos reservados. Desarrollado por FeliDani Soft.</p>
+            </div>
+        </footer>
+    </div>
+    <div id="side-menu" class="side-menu">
+        <img src="{{ url_for('static', filename='images/tituloMenuFondoTransparente.png') }}" alt="Menú Principal">
+        <br>
+        <div class="contenedorBtnMenu">
+            <a href="{{ url_for('index') }}">Inicio-Descargar</a>
+        </div>
+        <div class="contenedorBtnMenu">
+            <a href="{{ url_for('requisitos') }}">Requisitos de Uso</a>
+        </div>
+        <div class="contenedorBtnMenu">
+            <a href="{{ url_for('capturas') }}">Personajes y Dojos</a>
+        </div>
+        <div class="contenedorBtnMenu">
+            <a href="{{ url_for('gameplay') }}">Gameplay</a>
+        </div>
+        <div class="contenedorBtnMenu">
+            <a href="{{ url_for('torneos') }}">Eventos - Torneos</a>
+        </div>
+        <div class="contenedorBtnMenu">
+            <a href="https://jovellanosrumble.foroactivo.com/">Foro Oficial</a>
+        </div>
+        <div class="contenedorBtnMenu">
+            <a href="{{ url_for('controles') }}">Controles</a>
+        </div>
+        <div class="contenedorBtnMenu">
+            <a href="{{ url_for('faq') }}">Preguntas y Respuestas Frecuentes</a>
+        </div>
+        <div class="contenedorBtnMenu">
+            <a href="{{ url_for('privacidad') }}">Política de Privacidad</a>
+        </div>
+        <div class="contenedorBtnMenu">
+            <a href="{{ url_for('creditos') }}">Créditos - SAT</a>
+        </div>
+        <div class="contenedorBtnMenu">
+            <a href="{{ url_for('mostrar_datos_Torneos') }}">Jugadores Inscritos</a>
+        </div>
+    </div>
+    <script>
+    /*TODO JAVASCRIPT*/
+
+
+    //Eventos para manejar el menu dinamico
+    const menuToggle = document.getElementById("menu-toggle");
+    const sideMenu = document.getElementById("side-menu");
+
+    menuToggle.addEventListener("click", () => {
+        sideMenu.classList.toggle("show-menu");
+    });
+
+    menuToggle.addEventListener("mouseenter", () => {
+        sideMenu.classList.add("show-menu");
+    });
+
+    sideMenu.addEventListener("mouseleave", () => {
+        sideMenu.classList.remove("show-menu");
+    });
+
+
+    /*Evento para darle aspecto a los botones*/
+    document.addEventListener("DOMContentLoaded", function() {
+        var btnDescargar = document.getElementById("btnDescargar");
+
+        //Función para mostrar y ocultar el botón durante 2 segundos
+        function mostrarYDesaparecer() {
+            var miBtn = document.getElementById("btnDescargar");
+            miBtn.style.display = "flex"; //Mostrar el botón
+            setTimeout(function() {
+                miBtn.style.display = "none"; //Ocultar el botón después de 2 segundos
+            }, 2000);
+        }
+        btnDescargar.addEventListener("click", mostrarYDesaparecer);
+    });
+
+
+    /*LOGICA PARA EL DELAY QUE TIENE EL TEXTO QUE SE GENERA POCO A POCO , EL TEXTO APARECERA FRASE A FRASE */
+    document.addEventListener("DOMContentLoaded", function() {
+        // Obtén la sección y elementos de la lista
+        const requisitosSection = document.querySelector('.parrafo');
+        const listaElementos = document.querySelectorAll('.parrafo li');
+
+        // Función para mostrar los elementos con delay
+        function mostrarElementosConDelay() {
+            listaElementos.forEach((elemento, index) => {
+                setTimeout(() => {
+                    elemento.style.opacity = '1';
+                    elemento.style.transform = 'translateY(0)';
+                }, 600 * index);
+            });
+        }
+
+        // Muestra la sección con delay
+        setTimeout(() => {
+            requisitosSection.style.opacity = '1';
+            mostrarElementosConDelay();
+        }, 600);
+    });
+
+
+
+    /*LOGICA DE LOS VINCULOS DE LAS REDES SOCIALES.*/
+    var redesSociales = document.querySelectorAll('.red-social');
+    redesSociales.forEach(redSocial => {
+        redSocial.addEventListener('click', () => {
+            const url = redSocial.querySelector('a').getAttribute('href');
+            window.location.href = url;
+        });
+    });
+
+
+    /*Logica de las animaciones al hacer scroll*/
+    window.onscroll = function() {
+        const elements = document.querySelectorAll('.animate');
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (elementTop < windowHeight) {
+                element.classList.add('active');
+            }
+        });
+    };
+
+    /*Logica de la descarga del archivo .exe*/
+    document.getElementById('btnDescargar').addEventListener('click', function() {
+        //URL del archivo .exe
+        var archivoExe = 'recursos/prueba.7z';
+
+        //Crea una solicitud HTTP
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', archivoExe, true);
+        xhr.responseType = 'blob';
+
+        //Maneja la carga del archivo
+        xhr.onload = function() {
+            //Crea un objeto Blob con la respuesta
+            var blob = new Blob([xhr.response], { type: 'application/octet-stream' });
+
+            //Crea un enlace de descarga
+            var enlaceDescarga = document.createElement('a');
+            enlaceDescarga.href = window.URL.createObjectURL(blob);
+            enlaceDescarga.download = 'Archivo Descargado SuperBien.exe';
+
+            //Añade el enlace al documento
+            document.body.appendChild(enlaceDescarga);
+
+            //Simula un clic en el enlace para iniciar la descarga
+            enlaceDescarga.click();
+        };
+
+        //Envía la solicitud
+        xhr.send();
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,547 @@
+@font-face {
+    font-family: 'FutureShit';
+    src: url('../static/fonts/fuente.otf') format('truetype');
+}
+
+a {
+    cursor: url('images/punteroMano.png'), auto;
+}
+
+body {
+    font-family: 'FutureShit', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/bodyBackground.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    cursor: url('images/puntero.png'), auto;
+}
+
+
+header {
+    position: relative;
+    width: 100%;
+    height: 185px;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+}
+
+
+/*Estilo para la barra de Scroll*/
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/*Estilo para el rastro de la barra de scroll*/
+::-webkit-scrollbar-track {
+    background-color: mediumpurple;
+}
+
+/*Estilo para el pulgar de la barra de desplazamiento*/
+::-webkit-scrollbar-thumb {
+    background-color: rebeccapurple;
+    border-radius: 20px;
+}
+
+/*Cambiar el color del pulgar al pasar el ratón sobre él*/
+::-webkit-scrollbar-thumb:hover {
+    background-color: #771CF3;
+    border-radius: 2000px;
+}
+
+
+.imagenTitulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imagenTitulo img {
+    width: 100%;
+    height: auto;
+}
+
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    cursor: url('images/punteroMano.png'), auto;
+    font-family: 'FutureShit', sans-serif;  /* Aplicar la fuente personalizada */
+    color: lightgray;  /* Color del texto */
+    font-size: 20px;  /* Tamaño del texto */
+    
+}
+
+.textoMenuPrincipal {
+    font-family: fantasy;
+    text-decoration-color: darkred;
+    font-size: 24px;
+    color: black;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -320px;
+    /* Inicialmente oculto */
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(to top, #000000, #771CF3);
+    padding: 20px;
+    z-index: 2;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    transition: left 1.0s ease;
+}
+
+.side-menu img {
+    margin-left: -10px;
+    margin-bottom: 10px;
+    width: 220px;
+    height: 80px;
+}
+
+.side-menu a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    text-align: center;
+    width: 200px;
+    cursor: url('images/punteroMano.png'), auto;
+}
+
+
+.show-menu {
+    left: 0;
+    width: 200px;
+}
+
+.close-menu {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.descripcion {
+    background-color: #771CF3;
+    color: #fff;
+    padding: 20px;
+    /* Reduce el padding para disminuir la altura */
+    text-align: center;
+    opacity: 0.7;
+}
+
+.descripcion-content {
+    max-width: 600px;
+    margin: auto;
+    height: 125px;
+    /* Ajusta la altura según tus necesidades */
+}
+
+.descripcion h2 {
+    font-size: 36px;
+    text-decoration: underline;
+    color: #fff;
+}
+
+
+.descripcion p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+
+.gameplayVideos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 40px;
+    align-items: center;
+}
+
+.video {
+    color: darkred;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    height: auto;
+    margin: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.video h2 {
+    align-items: center;
+    text-align: center;
+}
+
+.video p {
+    align-items: center;
+    text-align: center;
+}
+
+.video iframe {
+    width: 100%;
+}
+
+iframe{
+    cursor: url('images/punteroMano.png'), auto;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+.contenedorBtnDescargar {
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 230px;
+    background-color: darkred;
+    align-items: center;
+    text-align: center;
+    text-decoration-color: black;
+
+}
+
+.download-button {
+    background: darkred;
+    width: 230px;
+    height: 50px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.download-button::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, #00fffc, transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+    position: absolute;
+}
+
+.download-button:hover {
+    width: 230px;
+    height: 50px;
+    font-weight: 700;
+    border-radius: 5px;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    box-shadow: 0 0 20px 5px #00fffc;
+}
+
+.download-button:hover::before {
+    transform: translateX(100%);
+
+}
+
+/*ESTILO DE LOS BOTONES Y EL MENÚ*/
+.contenedorBtnMenu {
+    border-radius: 5px;
+    width: 100%;
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.contenedorBtnMenu a {
+    display: block;
+    border-radius: 5px;
+    width: 100%;
+    background: darkred;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: url('images/punteroMano.png'), auto;
+}
+
+
+
+
+.contenedorBtnMenu::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, #00fffc, transparent);
+    transform: translateX(-100%);
+    transition: 0.6s;
+    position: absolute;
+}
+
+.contenedorBtnMenu:hover {
+    background-color: darkred;
+    color: darkred;
+    box-shadow: 0 0 20px 5px #00fffc;
+}
+
+.contenedorBtnMenu:hover::before {
+    transform: translateX(100%);
+
+}
+
+
+/*GESTION DE LOS DIVS E IMAGENES DE LAS REDES SOCIALES*/
+.redesSociales {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.red-social {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+/* Estilo base para las imágenes de redes sociales */
+.red-social img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    border-radius: 40%;
+    cursor: url('images/punteroMano.png'), auto;
+}
+
+/* Efecto al pasar el cursor por encima */
+.red-social:hover img {
+    transform: scale(1.2);
+    box-shadow: 0 0 15px rgba(5, 5, 5, 0.5);
+    background-color: transparent;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+
+/*RESPONSIVE*/
+/*Estilos generales para pantallas de teléfonos móviles en horizontal*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+    .imagenTitulo img {
+        width: 100%;
+    }
+
+    header {
+        padding: 2%;
+    }
+
+    header h1 {
+        font-size: 4%;
+    }
+
+    header p {
+        font-size: 2%;
+    }
+
+    .side-menu {
+        width: 100%;
+        left: 0;
+    }
+
+    .contenedorBtnMenu a {
+        width: 100%;
+    }
+
+    .red-social {
+        margin-right: 2%;
+        width: 6%;
+        height: 6%;
+    }
+
+    .red-social img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .requisitos {
+        padding: 2%;
+    }
+
+    .requisitos h2 {
+        font-size: 3%;
+    }
+
+    .requisitos li {
+        font-size: 1.5%;
+    }
+}
+
+
+/*Estilos generales para pantallas de teléfonos móviles en vertical*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait){
+    .imagenTitulo img {
+        width: 100%;
+    }
+
+    header {
+        padding: 2%;
+    }
+
+    header h1 {
+        font-size: 4%;
+    }
+
+    header p {
+        font-size: 2%;
+    }
+
+    .side-menu {
+        width: 100%;
+        left: 0;
+    }
+
+    .contenedorBtnMenu a {
+        width: 100%;
+    }
+
+    .red-social {
+        margin-right: 2%;
+        width: 6%;
+        height: 6%;
+    }
+
+    .red-social img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .requisitos {
+        padding: 2%;
+    }
+
+    .requisitos h2 {
+        font-size: 3%;
+    }
+
+    .requisitos li {
+        font-size: 1.5%;
+    }
+}
+
+
+
+/*Estilos generales para pantallas de tablets en horizontal*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1){
+    header h1 {
+        font-size: 5%;
+    }
+
+    header p {
+        font-size: 2.5%;
+    }
+
+    .side-menu {
+        width: 20%;
+        left: -20%;
+    }
+
+    .contenedorBtnMenu a {
+        width: 16%;
+    }
+}
+
+
+/*Estilos generales para pantallas de tablets en vertical*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1){
+    header h1 {
+        font-size: 5%;
+    }
+
+    header p {
+        font-size: 2.5%;
+    }
+
+    .side-menu {
+        width: 20%;
+        left: -20%;
+    }
+
+    .contenedorBtnMenu a {
+        width: 16%;
+    }
+    .requisitos h2 {
+        font-size: 4%;
+    }
+
+    .requisitos li {
+        font-size: 2%;
+    }
+}
