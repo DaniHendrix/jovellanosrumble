@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovellanos Rumble - Torneos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='04-JovellanosRumbleTorneos.css') }}">>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logoJovellanosRumble.png') }}">
+</head>
+
+<body>
+    <header>
+        <div class="imagenTitulo">
+            <img src="static/images/tituloHeaderTorneos.png" alt="">
+        </div>
+        <div class="header-content">
+            <button id="menu-toggle" class="menu-toggle">&#9776; MENU</button>
+        </div>
+        <div id="side-menu" class="side-menu">
+            <img src="{{ url_for('static', filename='images/tituloMenuFondoTransparente.png') }}" alt="Menú Principal">
+            <br>
+            <div class="contenedorBtnMenu">
+                <a href="{{ url_for('index') }}">Inicio-Descargar</a>
+            </div>
+            <div class="contenedorBtnMenu">
+                <a href="{{ url_for('requisitos') }}">Requisitos de Uso</a>
+            </div>
+            <div class="contenedorBtnMenu">
+                <a href="{{ url_for('capturas') }}">Personajes y Dojos</a>
+            </div>
+            <div class="contenedorBtnMenu">
+                <a href="{{ url_for('gameplay') }}">Gameplay</a>
+            </div>
+            <div class="contenedorBtnMenu">
+                <a href="{{ url_for('torneos') }}">Eventos - Torneos</a>
+            </div>
+            <div class="contenedorBtnMenu">
+                <a href="https://jovellanosrumble.foroactivo.com/">Foro Oficial</a>
+            </div>
+            <div class="contenedorBtnMenu">
+                <a href="{{ url_for('controles') }}">Controles</a>
+            </div>
+            <div class="contenedorBtnMenu">
+                <a href="{{ url_for('faq') }}">Preguntas y Respuestas Frecuentes</a>
+            </div>
+            <div class="contenedorBtnMenu">
+                <a href="{{ url_for('privacidad') }}">Política de Privacidad</a>
+            </div>
+            <div class="contenedorBtnMenu">
+                <a href="{{ url_for('creditos') }}">Créditos - SAT</a>
+            </div>
+            <div class="contenedorBtnMenu">
+                <a href="{{ url_for('mostrar_datos_Torneos') }}">Jugadores Inscritos</a>
+            </div>
+        </div>
+    </header>
+    <section class="descripcion">
+        <div class="descripcion-content">
+            <h2><u>Torneos Jovellanos Rumble</u></h2>
+            <p>Si aún no estas apuntado a ningun evento, aprovecha</p>
+        </div>
+    </section>
+    <section class="requisitos">
+        <h2>
+            <p><u>¿Quieres inscribirte como jugador Jovellanos Rumble?</u></p>
+        </h2>
+        <ul>
+            <li>Debes ser mayor de edad o jugar sin que se entere nadie</li>
+            <li>Debes jugar a Jovellanos despues de hacer tus obligaciones</li>
+            <li>Si experimentas fotosensibilidad da igual, puedes jugar (bajo tu responsabilidad)</li>
+            <li>Debes enganchar a todos los amigos que te sea posible</li>
+            <li>Debes predicar la palabra de Jovellanos</li>
+            <li>Debes tener amigos de verdad, si no, te recomendamos que dejes de jugar y salgas de casa</li>
+        </ul>
+    </section>
+    <div class="contenedorMapas">
+        <section class="iframeMapa">
+            <div class=mapa>
+                <h2>Torneo De Madrid</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3041.426063000512!2d-3.858433723538381!3d40.332893560736984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418e84c8193fdb%3A0x5f5aafa2a3f16d65!2sC.%20de%20Francisco%20Javier%20Sauquillo%2C%2014%2C%2028932%20M%C3%B3stoles%2C%20Madrid!5e0!3m2!1ses!2ses!4v1699019739784!5m2!1ses!2ses" width="450" height="305" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>23-11-2023 <br> 18:00h en Parque del Retiro</h3>
+                <div class="contenedorBtnInscripcion">
+                    <div class="btnInscripcion">
+                        <a href="#" class="open-modal" data-open="modalMadrid">
+                            Inscripcion Madrid
+                        </a>
+                    </div>
+                </div>
+        </section>
+        <section class="iframeMapa">
+            <div class=mapa>
+                <h2>Torneo De Gotham City</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194507.16432055787!2d-3.8472610437695964!3d40.382826249698766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4219a585fe2c55%3A0xda36cc6c70aae9e9!2sBatman%3A%20Gotham%20City%20Escape!5e0!3m2!1ses!2ses!4v1700215493588!5m2!1ses!2ses" width="450" height="305" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>2-3-2024 <br> 18:00h en el Asilo de Arkham</h3>
+                <div class="contenedorBtnInscripcion">
+                    <div class="btnInscripcion">
+                        <a href="#" class="open-modal" data-open="modalGothamCity">
+                            Inscripcion <br> Gotham City
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="iframeMapa">
+            <div class=mapa>
+                <h2>Torneo De Hill Valley</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13438.242643642981!2d-116.37281693292316!3d32.644521347672864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9a1d7ba63b141%3A0xb1a7b7562268d36c!2sHill%20Valley!5e0!3m2!1ses!2ses!4v1700215633541!5m2!1ses!2ses" width="450" height="305" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade""></iframe>
+                <h3>2-12-2023  <br> 18:00h en La Plaza del Reloj</h3>
+                <div class=" contenedorBtnInscripcion">
+                    <div class="btnInscripcion">
+                        <a href="#" class="open-modal" data-open="modalHillValley">
+                            Inscripcion <br> Hill Valley
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <br>
+    <section class="redesSociales">
+        <div class="red-social">
+            <a href="https://www.youtube.com/channel/UCJhbY8vO6LOMaHAtg0m4sUQ">
+                <img src="{{ url_for('static', filename='images/YouTube.png') }}" alt="YouTube">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.facebook.com/profile.php?id=61553519888539">
+                <img src="{{ url_for('static', filename='images/MetaFacebook.png') }}" alt="FaceBook">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://twitter.com/JoveRumble ">
+                <img src="{{ url_for('static', filename='images/TwitterX.png') }}" alt="Twitter">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://www.instagram.com/jovellanos_rumble/">
+                <img src="{{ url_for('static', filename='images/Instagram.png') }}" alt="Instagram">
+            </a>
+        </div>
+        <div class="red-social">
+            <a href="https://es.wikipedia.org/wiki/HTML5">
+                <img src="{{ url_for('static', filename='images/HTML5.png') }}" alt="HTML5">
+            </a>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Jovellanos Rumble. Todos los derechos reservados. Desarrollado por FeliDani Soft.</p>
+        </div>
+    </footer>
+    <div class="modal" id="modalMadrid">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <button class="close-modal" aria-label="close modal" data-close>✕</button>
+                <img src="static/images/inscripcionTorneoMadrid.png" alt="Titulo Inscripcion Torneo Madrid">
+            </header>
+            <section class="modal-content">
+                <form id="inscripcionFormMadrid" action="{{ url_for('guardar_datos_Madrid') }}" method="post">
+                    <div>
+                        <label for="nombreMadrid">Nombre:</label>
+                        <input type="text" id="nombreMadrid" name="nombre" placeholder="Introduce Nombre del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="apellidosMadrid">Apellidos:</label>
+                        <input type="text" id="apellidosMadrid" name="apellidos" placeholder="Introduce Apellidos del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="edadMadrid">Edad:</label>
+                        <input type="number" id="edadMadrid" name="edad" placeholder="Introduce Edad del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="telefonoMadrid">Teléfono:</label>
+                        <input type="number" id="telefonoMadrid" name="telefono" placeholder="Introduce Teléfono del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="dniMadrid">DNI:</label>
+                        <input type="text" id="dniMadrid" name="dni" placeholder="Introduce D.N.I. del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="emailMadrid">Correo Electrónico:</label>
+                        <input type="text" id="emailMadrid" name="email" placeholder="Introduce Email del Participante">
+                    </div>
+                    <br>
+                </form>
+            </section>
+            <footer class="modal-footer">
+                <div class="contenedorBtnInscripcion">
+                    <div class="btnInscripcion">
+                        <a href="#" onclick="btnEnviarFormularioMadrid()">
+                            Inscripcion Madrid
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="modal" id="modalGothamCity">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <button class="close-modal" aria-label="close modal" data-close>✕</button>
+                <img src="static/images/inscripcionTorneoGothamCity.png" alt="Titulo Inscripcion Torneo Gotham City">
+            </header>
+            <section class="modal-content">
+                <form id="inscripcionFormGothamCity" action="{{ url_for('guardar_datos_GothamCity') }}" method="post">
+                    <div>
+                        <label for="nombreGothamCity">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Introduce Nombre del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="apellidosGothamCity">Apellidos:</label>
+                        <input type="text" id="apellidos" name="apellidos" required placeholder="Introduce Apellidos del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="edadGothamCity">Edad:</label>
+                        <input type="number" id="edad" name="edad" required placeholder="Introduce Edad del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="telefonoGothamCity">Teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" required placeholder="Introduce Teléfono del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="dniGothamCity">DNI:</label>
+                        <input type="text" id="dni" name="dni" required placeholder="Introduce DNI del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="emailGothamCity">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email" required placeholder="Introduce Email del Participante">
+                    </div>
+                    <br>
+                </form>
+            </section>
+            <footer class="modal-footer">
+                <div class="contenedorBtnInscripcion">
+                    <div class="btnInscripcion">
+                        <a href="#" onclick="btnEnviarFormularioGothamCity()">
+                            Inscripcion <br> Gotham City
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <div class="modal" id="modalHillValley">
+        <div class="modal-dialog">
+            <header class="modal-header">
+                <button class="close-modal" aria-label="close modal" data-close>✕</button>
+                <img src="static/images/inscripcionTorneoHillValley.png" alt="Titulo Inscripcion Torneo Hill Valley">
+            </header>
+            <section class="modal-content">
+                <form id="inscripcionFormHillValley" action="{{ url_for('guardar_datos_HillValley') }}" method="post">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombreHillValley" name="nombre" required placeholder="Introduce Nombre del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="apellidos">Apellidos:</label>
+                        <input type="text" id="apellidosHillValley" name="apellidos" required placeholder="Introduce Apellidos del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="edad">Edad:</label>
+                        <input type="number" id="edadHillValley" name="edad" required placeholder="Introduce Edad del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input type="number" id="telefonoHillValley" name="telefono" required placeholder="Introduce Teléfono del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="dni">DNI:</label>
+                        <input type="text" id="dniHillValley" name="dni" required placeholder="Introduce DNI del Participante">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="text" id="emailHillValley" name="email" required placeholder="Introduce Email del Participante">
+                    </div>
+                    <br>
+                </form>
+            </section>
+            <footer class="modal-footer">
+                <div class="contenedorBtnInscripcion">
+                    <div class="btnInscripcion">
+                        <a href="#" onclick="btnEnviarFormularioHillValley()">
+                            Inscripcion <br> Hill Valley
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js">
+    /*IMPORT DE LA LIBRERIA DE JAVASCRIPT*/
+    </script>
+    <script>
+    /*TODO JAVASCRIPT*/
+    //Eventos para manejar el menu dinamico
+    const menuToggle = document.getElementById("menu-toggle");
+    const sideMenu = document.getElementById("side-menu");
+
+    menuToggle.addEventListener("click", () => {
+        sideMenu.classList.toggle("show-menu");
+    });
+
+    menuToggle.addEventListener("mouseenter", () => {
+        sideMenu.classList.add("show-menu");
+    });
+
+    sideMenu.addEventListener("mouseleave", () => {
+        sideMenu.classList.remove("show-menu");
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var btnDescargar = document.getElementById("btnDescargar");
+
+        //Función para mostrar y ocultar el botón durante 2 segundos
+        function mostrarYDesaparecer() {
+            var miBtn = document.getElementById("btnDescargar");
+            miBtn.style.display = "flex"; //Mostrar el botón
+            setTimeout(function() {
+                miBtn.style.display = "none"; //Ocultar el botón después de 2 segundos
+            }, 2000);
+        }
+        btnDescargar.addEventListener("click", mostrarYDesaparecer);
+    });
+
+    /*LOGICA DE LOS VINCULOS DE LAS REDES SOCIALES.*/
+    var redesSociales = document.querySelectorAll('.red-social');
+    redesSociales.forEach(redSocial => {
+        redSocial.addEventListener('click', () => {
+            const url = redSocial.querySelector('a').getAttribute('href');
+            window.location.href = url;
+        });
+    });
+
+    /*Lógica de la ventana modal (emergente) que aparece al pulsar sobre el botón de inscripción en torneos*/
+    const openEls = document.querySelectorAll(".open-modal");
+    const closeEls = document.querySelectorAll("[data-close]");
+    const isVisible = "is-visible";
+
+    openEls.forEach(el => {
+        el.addEventListener("click", function(e) {
+            e.preventDefault(); // Prevenir el comportamiento predeterminado
+            const modalId = this.getAttribute("data-open");
+            document.getElementById(modalId).classList.add(isVisible);
+        });
+    });
+
+    closeEls.forEach(el => {
+        el.addEventListener("click", function() {
+            const modal = this.closest(".modal");
+            modal.classList.remove(isVisible); //Restaurar el desplazamiento a la posición original
+            document.body.style.overflow = "auto";
+        });
+    });
+
+    document.addEventListener("click", (e) => {
+        if (e.target.classList.contains("modal")) {
+            e.target.classList.remove(isVisible);
+            // Restaurar el desplazamiento a la posición original
+            document.body.style.overflow = "auto";
+        }
+    });
+
+
+    document.addEventListener("keyup", (e) => {
+        if (e.key === "Escape") {
+            document.querySelector(".modal." + isVisible + " [data-close]").click();
+        }
+    });
+
+
+    /*LOGICA PARA EL DELAY QUE TIENE EL TEXTO QUE SE GENERA POCO A POCO , EL TEXTO APARECERA FRASE A FRASE */
+    document.addEventListener("DOMContentLoaded", function() {
+        // Obtén la sección y elementos de la lista
+        const requisitosSection = document.querySelector('.requisitos');
+        const listaElementos = document.querySelectorAll('.requisitos li');
+
+        // Función para mostrar los elementos con delay
+        function mostrarElementosConDelay() {
+            listaElementos.forEach((elemento, index) => {
+                setTimeout(() => {
+                    elemento.style.opacity = '1';
+                    elemento.style.transform = 'translateY(0)';
+                }, 900 * index);
+            });
+        }
+
+        // Muestra la sección con delay
+        setTimeout(() => {
+            requisitosSection.style.opacity = '1';
+            mostrarElementosConDelay();
+        }, 900);
+    });
+
+    /*FUNCIONES QUE RECOGEN LOS VALORES DEL FORMULARIO AL PULSAR EN EL BOTON*/
+    function btnEnviarFormularioMadrid() {
+        document.getElementById("inscripcionFormMadrid").submit();
+    }
+
+    function btnEnviarFormularioGothamCity() {
+        document.getElementById("inscripcionFormGothamCity").submit();
+    }
+
+    function btnEnviarFormularioHillValley() {
+        document.getElementById("inscripcionFormHillValley").submit();
+    }
+    </script>
+    <style>
+    .open-modal {
+        font-weight: bold;
+        padding: 0.75rem 1.75rem;
+        margin-bottom: 1rem;
+        border: transparent;
+        cursor: pointer;
+        transition: background 0.6s;
+        background: transparent;
+    }
+
+    /* MODAL */
+    .modal {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        cursor: auto;
+        opacity: 0;
+        transition: opacity 0.35s ease-in;
+        margin: 30px;
+    }
+
+    .modal-content {
+        text-align: center;
+        margin: auto;
+        color: white;
+        width: 500px;
+        height: 200px;
+        margin-bottom: 30px;
+        cursor: url('recursos/puntero.png'), auto;
+    }
+
+    .modal-content input,
+    button {
+        cursor: url('recursos/punteroMano.png'), auto;
+    }
+
+    .modal.is-visible {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .modal-dialog {
+        position: relative;
+        border-radius: 15px;
+        background: #fff;
+        overflow: auto;
+        cursor: default;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        background: #4F06B0;
+        opacity: 0.9;
+    }
+
+    .modal-header {
+        text-align: center;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        height: 100px;
+    }
+
+    .modal-header h2 {
+        margin: auto;
+        color: white;
+        /*Color del texto del título*/
+    }
+
+    .modal-header .close-modal {
+        font-size: 20px;
+        color: black;
+        cursor: pointer;
+        transition: color 0.7s ease;
+        margin-right: 5px;
+        /* Agrega un margen a la derecha */
+        position: absolute;
+        top: 30px;
+        /* Alinea el botón en la parte superior */
+        right: 5px;
+        /* Alinea el botón en la parte derecha */
+        color: black;
+        cursor: pointer;
+        transition: color 0.7s ease;
+    }
+
+    .modal-footer {
+        opacity: 1;
+    }
+    </style>
+</body>
+
+</html>
